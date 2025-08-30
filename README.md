@@ -52,23 +52,28 @@ Next.js 14 frontend application for the Todo app with modern React components an
 ## Project Structure
 
 ```
-├── app/                    # Next.js app directory
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Home page
-├── components/             # React components
-│   ├── ui/                # UI components (Radix UI)
-│   ├── todo-dashboard.tsx # Main todo dashboard
-│   ├── todo-list.tsx      # Todo list component
-│   ├── todo-item.tsx      # Individual todo item
-│   └── todo-modal.tsx     # Add/edit todo modal
-├── hooks/                  # Custom React hooks
-├── lib/                    # Utilities and configurations
-└── public/                 # Static assets
+├── app/                                  # Next.js app directory
+│   ├── globals.css                       # Global styles
+│   ├── layout.tsx                        # Root layout
+│   └── page.tsx                          # Home page
+├── components/                           # React components
+│   ├── ui/                               # UI components (Radix UI)
+│   ├── delete-confirmation-modal.tsx     # Delete todo confirmation modal
+│   ├── theme-provider.tsx                # Theme provider
+│   ├── todo-dashboard.tsx                # Main todo dashboard
+│   ├── todo-list.tsx                     # Todo list component
+│   ├── todo-item.tsx                     # Individual todo item
+│   └── todo-modal.tsx                    # Add/edit todo modal
+├── hooks/                                # Custom React hooks
+├── lib/                                  # Utilities and configurations
+└── public/                               # Static assets
+└── styles/                               # Global CSS
 ```
 
 ## Components
 
+- **Delete Confirmation Modal**: Displays delete confimation modal
+- **Theme Provider**: Theme provider
 - **TodoDashboard**: Main application container
 - **TodoList**: Displays list of todos
 - **TodoItem**: Individual todo with actions
